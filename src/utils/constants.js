@@ -1,6 +1,7 @@
 export const SCREENS = {
   HOME: 'HOME',
   GAME: 'GAME',
+  RULES: 'RULES',
 };
 
 export const COLORS = {

@@ -6,10 +6,12 @@ import { SCREENS } from '../utils/constants';
 
 import Game from './Game';
 import Home from './Home';
+import Rules from './Rules';
 
 const ScreenComponents = {
   [SCREENS.GAME]: <Game />,
   [SCREENS.HOME]: <Home />,
+  [SCREENS.RULES]: <Rules />,
 };
 
 const App = () => {
