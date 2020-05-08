@@ -8,6 +8,7 @@ const initialState = {
   game: gameEngine.state,
   screen: SCREENS.HOME,
   selectedQuestion: null,
+  playerModal: null,
 };
 
 const { useGlobalState } = createGlobalState(initialState);

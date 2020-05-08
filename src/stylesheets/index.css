@@ -81,7 +81,9 @@ h1 {
     width: 20px;
     padding: 8px 8px 4px;
     border-radius: 4px 4px 0 0;
-    text-transform: lowercase; }
+    text-transform: lowercase;
+    text-align: center;
+    color: #ffffff; }
   .number-tile .number {
     display: block;
     background: #ffffff;
@@ -137,3 +139,8 @@ h1 {
     color: #ffffff;
     padding: 8px;
     border-radius: 4px; }
+
+.countdown {
+  font-size: 3em;
+  text-align: center;
+  font-weight: bold; }

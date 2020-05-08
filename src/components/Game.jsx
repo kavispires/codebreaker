@@ -4,19 +4,20 @@ import ButtonGroup from '@material-ui/core/ButtonGroup';
 
 import gameEngine from '../engine';
 import useGlobalState from '../useGlobalState';
-import { SCREENS } from '../utils/constants';
 
+import Code from './Code';
 import Header from './Header';
-import Number from './Number';
+import PlayerCodeModal from './PlayerCodeModal';
 import Question from './Question';
 
 const Game = () => {
   // Global States
   const [game, setGame] = useGlobalState('game');
   const [selectedQuestion, setSelectedQuestion] = useGlobalState('selectedQuestion');
+  const [activePlayerModal, setActivePlayerModal] = useGlobalState('playerModal');
 
   const revealCode = (playerNumber) => {
-    console.log(game.hands[playerNumber]);
+    setActivePlayerModal(playerNumber);
   };
 
   const handleConfirmQuestion = () => {
@@ -43,18 +44,13 @@ const Game = () => {
               </Button>
             ))}
           </ButtonGroup>
+          {activePlayerModal && <PlayerCodeModal />}
         </div>
         <h3>On your turn:</h3>
         <h2>
           Ask a Question <span className="text-green">OR</span> Guess the Code
         </h2>
-        {game.code && (
-          <div className="code-result">
-            {game.code.map((numberCode, index) => (
-              <Number key={numberCode} numberCode={numberCode} position={index} isHidden />
-            ))}
-          </div>
-        )}
+        {game.code && <Code code={game.code} isHidden />}
 
         <p>Questions Left: {game.questionsLeft} (including the visible ones)</p>
         <div className="questions-list">
