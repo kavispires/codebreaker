@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+import React, { Fragment, useState } from 'react';
 import Button from '@material-ui/core/Button';
 import Dialog from '@material-ui/core/Dialog';
 import DialogActions from '@material-ui/core/DialogActions';
 import DialogContent from '@material-ui/core/DialogContent';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import Slide from '@material-ui/core/Slide';
+import LinearProgress from '@material-ui/core/LinearProgress';
 
 import useGlobalState from '../useGlobalState';
 import useInferval from '../utils/useInterval';
@@ -63,6 +64,8 @@ const PlayerCodeModal = () => {
     setActivePlayerModal(null);
   };
 
+  const completed = (100 * hideCountdown) / 20;
+
   return (
     <Dialog
       open={Boolean(activePlayerModal)}
@@ -77,7 +80,10 @@ const PlayerCodeModal = () => {
       </DialogTitle>
       <DialogContent>
         {isRevealed ? (
-          <Code code={activeCode} isHidden={!isRevealed} />
+          <Fragment>
+            <Code code={activeCode} isHidden={!isRevealed} />
+            <LinearProgress variant="determinate" value={completed} />
+          </Fragment>
         ) : (
           <div className="countdown">{revealCountdown}</div>
         )}
