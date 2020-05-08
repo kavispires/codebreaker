@@ -1,0 +1,24 @@
+.rules {
+  .content {
+    margin-top: $unit3;
+  }
+}
+
+.rule-container {
+  background: $color-white;
+  color: $color-black;
+  padding: $unit2 $unit3 $unit4;
+  margin-bottom: $unit3;
+}
+
+.rule-image {
+  width: 50%;
+  max-width: 450px;
+  margin: 0 auto;
+
+  img {
+    width: 100%;
+    border-radius: $unit1;
+    box-shadow: $color-black 2px 2px 5px;
+  }
+}

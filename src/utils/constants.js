@@ -54,3 +54,9 @@ export const INDEX_QUESTION_LETTER = {
   4: 'E',
   5: 'F',
 };
+
+export const NUMBER_OF_DIGITS = {
+  2: 5,
+  3: 5,
+  4: 4,
+};

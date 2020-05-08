@@ -22,7 +22,7 @@ const Home = () => {
 
   const handleCreateGame = () => {
     setGame(gameEngine.setup(players));
-    setScreen(SCREENS.GAME);
+    setScreen(SCREENS.RULES);
   };
 
   return (

@@ -148,3 +148,21 @@ h1 {
   font-size: 3em;
   text-align: center;
   font-weight: bold; }
+
+.rules .content {
+  margin-top: 16px; }
+
+.rule-container {
+  background: #ffffff;
+  color: #222222;
+  padding: 8px 16px 32px;
+  margin-bottom: 16px; }
+
+.rule-image {
+  width: 50%;
+  max-width: 450px;
+  margin: 0 auto; }
+  .rule-image img {
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: #222222 2px 2px 5px; }
