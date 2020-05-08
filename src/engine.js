@@ -18,6 +18,7 @@ class GameEngine {
       hands: this.hands,
       questionsLeft: this.questionsLeft,
       activeQuestions: this.activeQuestions,
+      playerCount: this.playerCount,
     };
   }
 
@@ -80,6 +81,11 @@ class GameEngine {
 
   reset() {
     this.playerCount = 0;
+    this.code = null;
+    this.hands = {};
+    this.questions = [];
+    this.activeQuestions = [];
+    this.usedQuestions = [];
   }
 }
 
