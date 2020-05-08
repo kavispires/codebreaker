@@ -6,8 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   width: 100%;
-  color: $color-white;
-}
+  color: #ffffff; }
 
 .app-container {
   width: 100%;
@@ -16,19 +15,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: $unit4;
-}
+  padding-bottom: 32px; }
 
 .logo {
   width: 50%;
-  max-width: 150px;
-}
+  max-width: 150px; }
 
 .logo-small {
   width: 20%;
-  max-width: 80px;
-}
+  max-width: 80px; }
 
 h1 {
-  text-transform: uppercase;
-}
+  text-transform: uppercase; }
