@@ -33,18 +33,27 @@ h1 {
   text-transform: uppercase;
 }
 
-.btn--outline {
-  &.MuiButton-root {
-    color: $color-primary;
-    border-color: $color-primary;
-    margin: $unit1 $unit2;
-  }
-}
+.btn {
+  cursor: pointer;
 
-.btn--group {
-  &.MuiButton-root {
-    color: $color-primary;
-    border-color: $color-primary;
+  &--invisible {
+    background: none;
+    border: none;
+  }
+
+  &--outline {
+    &.MuiButton-root {
+      color: $color-primary;
+      border-color: $color-primary;
+      margin: $unit1 $unit2;
+    }
+  }
+
+  &--group {
+    &.MuiButton-root {
+      color: $color-primary;
+      border-color: $color-primary;
+    }
   }
 }
 

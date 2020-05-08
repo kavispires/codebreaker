@@ -28,14 +28,18 @@ body {
 h1 {
   text-transform: uppercase; }
 
-.btn--outline.MuiButton-root {
-  color: #23941b;
-  border-color: #23941b;
-  margin: 4px 8px; }
-
-.btn--group.MuiButton-root {
-  color: #23941b;
-  border-color: #23941b; }
+.btn {
+  cursor: pointer; }
+  .btn--invisible {
+    background: none;
+    border: none; }
+  .btn--outline.MuiButton-root {
+    color: #23941b;
+    border-color: #23941b;
+    margin: 4px 8px; }
+  .btn--group.MuiButton-root {
+    color: #23941b;
+    border-color: #23941b; }
 
 .text-green {
   color: #23941b; }

@@ -50,7 +50,11 @@ const Game = () => {
         <h2>
           Ask a Question <span className="text-green">OR</span> Guess the Code
         </h2>
-        {game.code && <Code code={game.code} isHidden />}
+        {game.code && (
+          <button className="btn btn--invisible" onClick={() => revealCode('code')}>
+            <Code code={game.code} isHidden />
+          </button>
+        )}
 
         <p>Questions Left: {game.questionsLeft} (including the visible ones)</p>
         <div className="questions-list">

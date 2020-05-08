@@ -26,6 +26,11 @@ const PlayerCodeModal = () => {
   const [hideCountdown, setHideCountdown] = useState(20);
   const [isHideCountdownRunning, setIsHideCountdownRunning] = useState(false);
 
+  const activeCode = activePlayerModal === 'code' ? game.code : game.hands[activePlayerModal].hand;
+
+  const titlePrefix =
+    activePlayerModal === 'code' ? 'Code Result' : `Player ${activePlayerModal} Code`;
+
   useInferval(
     () => {
       const newCountdown = revealCountdown - 1;
@@ -68,20 +73,18 @@ const PlayerCodeModal = () => {
       aria-describedby="alert-dialog-slide-description"
     >
       <DialogTitle>
-        {isRevealed
-          ? `Player ${activePlayerModal} Code`
-          : `Player ${activePlayerModal} code will be revealed in...`}
+        {isRevealed ? titlePrefix : `${titlePrefix} will be revealed in...`}
       </DialogTitle>
       <DialogContent>
         {isRevealed ? (
-          <Code code={game.hands[activePlayerModal].hand} isHidden={!isRevealed} />
+          <Code code={activeCode} isHidden={!isRevealed} />
         ) : (
           <div className="countdown">{revealCountdown}</div>
         )}
       </DialogContent>
       <DialogActions>
         <Button onClick={handleClose} color="primary">
-          Auto-close in {hideCountdown}
+          {isRevealed ? `Auto-close in ${hideCountdown}` : 'Close'}
         </Button>
       </DialogActions>
     </Dialog>

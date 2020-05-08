@@ -17,7 +17,7 @@ const Question = ({ question, position }) => {
 
   return (
     <button
-      className={`question-card ${isSelectedClassModifier}`}
+      className={`btn question-card ${isSelectedClassModifier}`}
       id={question.id}
       onClick={handleSelectQuestion}
     >
