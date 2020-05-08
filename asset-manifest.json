@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/codebreaker/static/css/main.b99368f9.chunk.css",
+    "main.js": "/codebreaker/static/js/main.f0f92b49.chunk.js",
+    "main.js.map": "/codebreaker/static/js/main.f0f92b49.chunk.js.map",
+    "runtime-main.js": "/codebreaker/static/js/runtime-main.54cb2e20.js",
+    "runtime-main.js.map": "/codebreaker/static/js/runtime-main.54cb2e20.js.map",
+    "static/js/2.25902bb2.chunk.js": "/codebreaker/static/js/2.25902bb2.chunk.js",
+    "static/js/2.25902bb2.chunk.js.map": "/codebreaker/static/js/2.25902bb2.chunk.js.map",
+    "index.html": "/codebreaker/index.html",
+    "precache-manifest.63dba58ed8f59b7f2d4c4db991d03110.js": "/codebreaker/precache-manifest.63dba58ed8f59b7f2d4c4db991d03110.js",
+    "service-worker.js": "/codebreaker/service-worker.js",
+    "static/css/main.b99368f9.chunk.css.map": "/codebreaker/static/css/main.b99368f9.chunk.css.map",
+    "static/js/2.25902bb2.chunk.js.LICENSE.txt": "/codebreaker/static/js/2.25902bb2.chunk.js.LICENSE.txt",
+    "static/media/codebreaker-logo.svg": "/codebreaker/static/media/codebreaker-logo.619b899a.svg",
+    "static/media/rule-example-1.jpg": "/codebreaker/static/media/rule-example-1.8a19287f.jpg",
+    "static/media/rule-example-2.jpg": "/codebreaker/static/media/rule-example-2.c7066c3e.jpg",
+    "static/media/rule-example-3.jpg": "/codebreaker/static/media/rule-example-3.5215b145.jpg",
+    "static/media/rule-example-4.jpg": "/codebreaker/static/media/rule-example-4.02f95d58.jpg",
+    "static/media/rule-goal-4.jpg": "/codebreaker/static/media/rule-goal-4.fd7a6494.jpg",
+    "static/media/rule-goal-5.jpg": "/codebreaker/static/media/rule-goal-5.dd6c7c31.jpg",
+    "static/media/rule-question.jpg": "/codebreaker/static/media/rule-question.6c34c973.jpg",
+    "static/media/rule-setup-4.jpg": "/codebreaker/static/media/rule-setup-4.5dd2fa92.jpg",
+    "static/media/rule-setup-5.jpg": "/codebreaker/static/media/rule-setup-5.3ea055bb.jpg",
+    "static/media/rule-setup-reveal.jpg": "/codebreaker/static/media/rule-setup-reveal.f55b24cb.jpg",
+    "static/media/rule-turn.jpg": "/codebreaker/static/media/rule-turn.2a46b951.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.54cb2e20.js",
+    "static/js/2.25902bb2.chunk.js",
+    "static/css/main.b99368f9.chunk.css",
+    "static/js/main.f0f92b49.chunk.js"
+  ]
+}
