@@ -25,8 +25,6 @@ const Home = () => {
     setScreen(SCREENS.GAME);
   };
 
-  console.log(players);
-
   return (
     <div className="home">
       <img className="logo" src={logo} alt="Carto logo" />

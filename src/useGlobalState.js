@@ -7,11 +7,7 @@ import { SCREENS } from './utils/constants';
 const initialState = {
   game: gameEngine.state,
   screen: SCREENS.HOME,
-  showCode1: false,
-  showCode2: false,
-  showCode3: false,
-  showCode4: false,
-  showAnswer: false,
+  selectedQuestion: null,
 };
 
 const { useGlobalState } = createGlobalState(initialState);

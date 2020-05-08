@@ -16,7 +16,7 @@ const Header = () => {
 
   const handleReset = () => {
     gameEngine.reset();
-    setScreen(SCREENS.SETUP);
+    setScreen(SCREENS.HOME);
   };
 
   const handleLeftButton = () => {

@@ -1,3 +1,4 @@
+import { COLOR_CODES } from './constants';
 /**
  * Shuffles list returning a new shuffled instance
  * @param {array} list
@@ -27,4 +28,18 @@ export const splitList = (list, chunks = 2) => {
   }
 
   return result;
+};
+
+/**
+ * Transform the number code into an object
+ * @param {string} numberCode
+ */
+export const decodeNumber = (numberCode) => {
+  const [numberString, colorLetter] = numberCode.split('');
+
+  return {
+    number: +numberString,
+    color: COLOR_CODES[colorLetter],
+    className: `number number--${COLOR_CODES[colorLetter]}`,
+  };
 };

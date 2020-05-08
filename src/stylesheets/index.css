@@ -33,6 +33,13 @@ h1 {
   border-color: #23941b;
   margin: 4px 8px; }
 
+.btn--group.MuiButton-root {
+  color: #23941b;
+  border-color: #23941b; }
+
+.text-green {
+  color: #23941b; }
+
 .home {
   flex: 1;
   width: 100%;
@@ -55,3 +62,78 @@ h1 {
       flex: 2;
       text-align: center;
       text-transform: uppercase; }
+
+.content {
+  text-align: center; }
+
+.code-result {
+  display: flex;
+  justify-content: center; }
+
+.number-tile {
+  margin: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .number-tile .letter {
+    display: block;
+    background: #23941b;
+    width: 20px;
+    padding: 8px 8px 4px;
+    border-radius: 4px 4px 0 0;
+    text-transform: lowercase; }
+  .number-tile .number {
+    display: block;
+    background: #ffffff;
+    padding: 8px 16px;
+    border: 3px solid #23941b;
+    border-radius: 8px;
+    font-size: 3rem;
+    font-weight: bold; }
+    .number-tile .number--black {
+      color: #222222; }
+    .number-tile .number--green {
+      color: #23941b; }
+    .number-tile .number--white {
+      color: #a3b8a1;
+      -webkit-text-fill-color: #ffffff;
+      -webkit-text-stroke-width: 2px;
+      -webkit-text-stroke-color: #222222; }
+    .number-tile .number--hidden {
+      background-color: #14540f;
+      content: 'A';
+      color: #a3b8a1; }
+
+.questions-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.question-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  color: #222222;
+  width: 30%;
+  max-width: 250px;
+  min-width: 150px;
+  min-height: 50px;
+  border-radius: 8px;
+  margin: 8px;
+  padding: 32px 16px;
+  position: relative;
+  font-size: 1em;
+  border: 2px solid #ffffff;
+  box-shadow: black 2px 2px 6px; }
+  .question-card--selected {
+    border: 2px solid #23941b;
+    background: #a3b8a1; }
+  .question-card .question-letter {
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    background: #23941b;
+    color: #ffffff;
+    padding: 8px;
+    border-radius: 4px; }

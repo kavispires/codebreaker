@@ -8,13 +8,20 @@ class GameEngine {
     this.code = null;
     this.hands = {};
     this.questions = [];
+    this.activeQuestions = [];
   }
 
   get state() {
     return {
       code: this.code,
       hands: this.hands,
+      questionsLeft: this.questionsLeft,
+      activeQuestions: this.activeQuestions,
     };
+  }
+
+  get questionsLeft() {
+    return this.questions.length + this.activeQuestions.length;
   }
 
   setup(playerCount) {
@@ -45,6 +52,10 @@ class GameEngine {
     }, {});
 
     this.questions = shuffle(CARDS);
+
+    while (this.activeQuestions.length < 6) {
+      this.activeQuestions.push(this.questions.pop());
+    }
 
     return this.state;
   }

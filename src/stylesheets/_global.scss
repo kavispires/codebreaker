@@ -40,3 +40,14 @@ h1 {
     margin: $unit1 $unit2;
   }
 }
+
+.btn--group {
+  &.MuiButton-root {
+    color: $color-primary;
+    border-color: $color-primary;
+  }
+}
+
+.text-green {
+  color: $color-primary;
+}

@@ -31,3 +31,26 @@ export const NUMBERS = [
   '9B',
   '9W',
 ];
+
+export const COLOR_CODES = {
+  B: 'black',
+  G: 'green',
+  W: 'white',
+};
+
+export const INDEX_LETTER = {
+  0: 'a',
+  1: 'b',
+  2: 'c',
+  3: 'd',
+  4: 'e',
+};
+
+export const INDEX_QUESTION_LETTER = {
+  0: 'A',
+  1: 'B',
+  2: 'C',
+  3: 'D',
+  4: 'E',
+  5: 'F',
+};
