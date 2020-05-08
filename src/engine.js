@@ -9,6 +9,7 @@ class GameEngine {
     this.hands = {};
     this.questions = [];
     this.activeQuestions = [];
+    this.usedQuestions = [];
   }
 
   get state() {
@@ -56,6 +57,23 @@ class GameEngine {
     while (this.activeQuestions.length < 6) {
       this.activeQuestions.push(this.questions.pop());
     }
+
+    return this.state;
+  }
+
+  confirmQuestion(questionID) {
+    this.activeQuestions = this.activeQuestions.reduce((acc, question) => {
+      if (questionID === question.id) {
+        this.usedQuestions.push(question);
+        if (this.questions.length > 0) {
+          acc.push(this.questions.pop());
+        }
+      } else {
+        acc.push(question);
+      }
+
+      return acc;
+    }, []);
 
     return this.state;
   }

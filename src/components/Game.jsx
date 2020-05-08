@@ -20,7 +20,7 @@ const Game = () => {
   };
 
   const handleConfirmQuestion = () => {
-    setGame(gameEngine.confirmQuestion);
+    setGame(gameEngine.confirmQuestion(selectedQuestion));
     setSelectedQuestion(null);
   };
 
