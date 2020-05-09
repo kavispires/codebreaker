@@ -23,7 +23,7 @@ import useGlobalState from '../useGlobalState';
 import Header from './Header';
 import { NUMBER_OF_DIGITS, SCREENS } from '../utils/constants';
 
-const steps = ['Goal', 'Setup', 'Turn', 'Answering', 'Guess', 'End Game'];
+const steps = ['Goal', 'Setup', 'Turn', 'Question', 'Answering', 'Guess', 'End Game'];
 
 const RuleGoal = ({ ruleSet }) => {
   const digits = NUMBER_OF_DIGITS[ruleSet];
@@ -55,7 +55,7 @@ const RuleSetup = ({ ruleSet }) => {
         Each code is always sorted by ascending order with black numbers coming before white
         numbers.
         <br />
-        Both 5's in the game are green.
+        Numbers go from 0 to 9 in black and in white, but both 5's are green.
         <br />
         Take turns revealing each player code and take note while other players close their eyes.
       </p>
@@ -130,19 +130,18 @@ const RuleGuess = ({ ruleSet }) => {
         </p>
       ) : (
         <Fragment>
+          <h3>You can only guess once!</h3>
           <div className="rule-image">
             <img src={ruleSet === 3 ? ruleGoal5Img : ruleGoal4Img} alt="rule question" />
           </div>
-
           <p>
-            <b>You can only guess once!</b> <br />
-            Announce that you are guessing, write down your guess. Everybody close their eyes and
-            click on the center code to reveal it. After the window auto-closes, announce if you got
-            it right or not. <br />
+            Announce that you are guessing, write down your guess. <br />
+            Everybody close their eyes and click on the center code to reveal it. <br />
+            After the window auto-closes, announce if you got it right or not. <br />
             If you got it, everybody else who hasn't had a turn this round can attempt to guess it
             too. <br />
             If you got it wrong, sit back and let other players continue the game. <br />
-            You still have to answer any questions, but you are out of the game
+            You still have to answer any questions, but you are out of the game.
           </p>
         </Fragment>
       )}
