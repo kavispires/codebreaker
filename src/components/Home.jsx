@@ -28,7 +28,7 @@ const Home = () => {
   return (
     <div className="home">
       <img className="logo" src={logo} alt="Carto logo" />
-      <h1>Carto</h1>
+      <h1>Rulebreaker</h1>
 
       <FormGroup>
         <FormControl component="fieldset">
